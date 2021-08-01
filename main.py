@@ -8,7 +8,7 @@ from time import sleep
 #для отправки по udp
 import socket
 import struct
-UDP_IP = '127.0.0.1'#"192.168.1.67"
+UDP_IP = '192.168.0.104'
 UDP_PORT = 5005
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 #объявляем глобальную переменную
@@ -52,29 +52,3 @@ if __name__ == '__main__':
 
         my_thread.start()
     my_thread.join()
-
-
-
-
-
-
-
-"""
-
-#UDP_IP = "192.168.1.67"
-UDP_IP = ''
-UDP_PORT = 5005
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock.bind((UDP_IP, UDP_PORT))
-
-while True:
-	try:
-		data, addr = sock.recvfrom(1024)
-		print(data.decode('utf-8'))
-	except:
-		print("gg")
-		t.sleep(0.5)
-
-
-#sock.sendto(MESSAGE, (UDP_IP, UDP_PORT))
-"""
