@@ -38,7 +38,7 @@ The_app = JoystickApp()
 def printer():
     while True:
         print(x, y)
-        sleep(0.4)
+        sleep(0.1)
         sock.sendto(struct.pack('dd', float(x), float(y)), (UDP_IP, UDP_PORT))
 
 if __name__ == '__main__':
