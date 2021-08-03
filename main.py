@@ -11,7 +11,7 @@ from time import sleep
 #для отправки по udp
 import socket
 import struct
-UDP_IP = '127.0.0.0'#"192.168.1.67"
+UDP_IP = '192.168.0.0'
 UDP_PORT = 5005
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 #объявляем глобальную переменную
@@ -23,7 +23,7 @@ class JoystickApp(App):
   def OnSliderValueChange(self, instance,value):
     self.label.text = "192.168." + str(int(self.slider.value)) + "." + str(int(self.slider1.value))
     global UDP_IP
-    UDP_IP = "127.0."+ str(int(self.slider.value)) + "." + str(int(self.slider1.value))
+    UDP_IP = "192.168."+ str(int(self.slider.value)) + "." + str(int(self.slider1.value))
 
   def ChangeThrust(self, instance,value):
       global thrust
