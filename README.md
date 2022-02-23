@@ -1,9 +1,12 @@
 The complex is intended for educational and research purposes. It consists of a nonlinear mathematical model of the aircraft in Matlab/Simulink,
 a joystick for convenient pitch and roll control in Python3, Kivy and FlightGear visualization tools.
 
-There are two types of control implemented in the model:
+![Image alt](https://github.com/ByMisterAnt/Aircraft-math-model-complex/blob/00f0083ef0638ca77f574af282300e85fbf3c086/img.png)
+
+There are three types of control implemented in the model:
 -using sliders in Matlab/Simulink itself
 -via the network using the phone app
+-using joystick
 
 The input of the model includes control signals for pitch, roll, yaw and two motors, as well as a vector of the state space
 (speeds in the Connected SC, angles, angular velocities in the Connected SC) via feedback. The output of the model is a vector
@@ -32,9 +35,10 @@ Click on start simulation (F9) in Simulink
 Комплекс предназначен для учебных и исследовательских целей. Состоит из нелинейной математической модели ЛА в Matlab/Simulink,
 джойстика для удобного управления по тангажу и крену на Python3, Kivyи средства визуализации FlightGear.
 
-В модели реализовано два типа управления:
+В модели реализовано три типа управления:
 -с помощью слайдеров в самом Matlab/Simulink
 -через сеть с помощью приложения для телефона
+-с помощью джойстика
 
 На вход модели идут сигналы управления по тангажу, крену, рысканью и двум двигателям, также вектор пространства состояний 
 (скорости в Связанной СК, углы, угловые скорости в Связанной СК) через обратную связь. На выходе модели вектор пространства
