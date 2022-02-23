@@ -50,7 +50,7 @@ Click on start simulation (F9) in Simulink
 
 Наличие Matlab/Simulink
 Сборка приложения джойстика под телефон осуществляется с помощью buildozer.
-Перед сборкой поменять ip адрес в main.py на адрес пк с Matlab или использовать готовую сборку с сайта http://f0541798.xsph.ru/source/soft/
+Перед сборкой поменять ip адрес в main.py на адрес пк с Matlab
 FlightGear для отрисовки, в planer.bat установить свой путь до папки FlightGear\data, при желании можно установить другую модель самолёта и
 поменять значение --aircraft=c172p на другое.
 
