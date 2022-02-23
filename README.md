@@ -16,7 +16,7 @@ How to assemble.
 
 Availability of Matlab/Simulink
 The joystick application is assembled for the phone using buildozer.
-Before assembling, change the ip address in main.py to the address of a pc with Matlab or use a ready-made assembly from the site http://f0541798.xsph.ru/source/soft/
+Before assembling, change the ip address in main.py to the address of a pc with Matlab 
 FlightGear for rendering, in planer.bat set your path to the FlightGear\data folder, if desired, you can install another aircraft model and
 change the value of --aircraft=c172p to another one.
 
